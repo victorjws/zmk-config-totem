@@ -32,30 +32,6 @@
     combos {
         compatible = "zmk,combos";
 
-        to_0 {
-            bindings = <&to 0>;
-            key-positions = <20 31 32>;
-            layers = <1 2 3>;
-        };
-
-        to_1 {
-            bindings = <&to 1>;
-            key-positions = <20 31 33>;
-            layers = <0 2 3>;
-        };
-
-        to_2 {
-            bindings = <&to 2>;
-            key-positions = <20 31 34>;
-            layers = <0 1 3>;
-        };
-
-        to_3 {
-            bindings = <&to 3>;
-            key-positions = <20 31 35>;
-            layers = <0 1 2>;
-        };
-
         ctrl+alt+delete {
             bindings = <&kp LC(LA(DELETE))>;
             key-positions = <33 36 37>;
@@ -84,10 +60,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                &kp Q  &kp W  &kp E    &kp R      &kp T        &kp Y      &kp L         &kp I      &kp O    &kp P
-                &kp A  &kp S  &kp D    &kp F      &kp G        &kp H      &kp J         &kp K      &kp L    &kp SEMICOLON
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C    &kp V      &kp B        &kp N      &kp M         &kp COMMA  &kp DOT  &kp FSLH       &mt LANGUAGE_1 CAPSLOCK
-                              &kp TAB  &kp LCTRL  &kp SPACE    &kp ENTER  &kp LEFT_ALT  &kp BSPC
+                &kp Q  &kp W  &kp E      &kp R               &kp T          &kp Y      &kp L         &kp I      &kp O    &kp P
+                &kp A  &kp S  &kp D      &kp F               &kp G          &kp H      &kp J         &kp K      &kp L    &kp SEMICOLON
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C      &kp V               &kp B          &kp N      &kp M         &kp COMMA  &kp DOT  &mt LANGUAGE_1 CAPSLOCK  &kp LEFT_GUI
+                              &lt 1 TAB  &lt 2 LEFT_CONTROL  &lt 3 SPACE    &kp ENTER  &kp LEFT_ALT  &kp BSPC
             >;
         };
 
@@ -110,10 +86,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                &kp PLUS                   &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp LBRC     &kp RBRC   &kp HOME        &kp END         &kp PAGE_UP      &kp PAGE_DOWN
-                &kp MINUS                  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LBKT     &kp RBKT   &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &kp EQUAL
-&kp LEFT_SHIFT  &mt KP_DIVIDE KP_MULTIPLY  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LPAR     &kp RPAR   &kp COMMA       &kp DOWN_ARROW  &kp DOT          &kp SLASH      &kp LEFT_GUI
-                                                         &kp NUMBER_0  &kp LCTRL     &kp SPACE    &kp ENTER  &kp LEFT_ALT    &kp BACKSPACE
+                &kp PLUS                   &kp N7        &kp NUMBER_8    &kp NUMBER_9        &kp LBRC       &kp RBRC   &kp HOME        &kp END         &kp PAGE_UP      &kp PAGE_DOWN
+                &kp MINUS                  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6        &kp LBKT       &kp RBKT   &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &kp EQUAL
+&kp LEFT_SHIFT  &mt KP_DIVIDE KP_MULTIPLY  &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3        &kp LPAR       &kp RPAR   &kp COMMA       &kp DOWN_ARROW  &kp DOT          &kp SLASH      &kp LEFT_GUI
+                                                         &lt 0 NUMBER_0  &lt 2 LEFT_CONTROL  &lt 3 SPACE    &kp ENTER  &kp LEFT_ALT    &kp BACKSPACE
             >;
         };
 
@@ -136,10 +112,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                &kp ESCAPE  &kp AMPERSAND    &kp AT_SIGN  &kp GRAVE  &kp BACKSLASH        &msc SCRL_UP    &mkp MB4        &mkp MB5        &mkp MB3         &kp DELETE
-                &trans      &kp DOLLAR       &kp PERCENT  &kp CARET  &kp DOUBLE_QUOTES    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_RIGHT  &trans
-&kp LEFT_SHIFT  &trans      &kp EXCLAMATION  &kp AT_SIGN  &kp HASH   &kp SINGLE_QUOTE     &msc SCRL_DOWN  &msc SCRL_LEFT  &mmv MOVE_DOWN  &msc SCRL_RIGHT  &trans      &kp LEFT_GUI
-                                             &kp COMMA    &kp DOT    &kp SEMICOLON        &mkp MB1        &mkp MB2        &kp BACKSPACE
+                &kp EQUAL   &kp AMPERSAND    &kp AT_SIGN  &kp GRAVE           &kp BACKSLASH       &msc SCRL_UP    &mkp MB4        &mkp MB5        &mkp MB3         &kp EQUAL
+                &kp MINUS   &kp DOLLAR       &kp PERCENT  &kp CARET           &kp SLASH           &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_RIGHT  &kp MINUS
+&kp LEFT_SHIFT  &kp ESCAPE  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH            &kp SINGLE_QUOTE    &msc SCRL_DOWN  &msc SCRL_LEFT  &mmv MOVE_DOWN  &msc SCRL_RIGHT  &kp DELETE  &kp LEFT_GUI
+                                             &lt 0 TAB    &lt 1 LEFT_CONTROL  &lt 3 SPACE         &mkp MB1        &mkp MB2        &kp BACKSPACE
             >;
         };
 
@@ -162,10 +138,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                &kp ESCAPE  &kp PRINTSCREEN  &kp C_PREVIOUS    &kp C_VOLUME_UP    &trans    &trans  &kp F7        &kp F8  &kp F9  &kp F12
-                &trans      &trans           &kp C_PLAY_PAUSE  &kt C_VOLUME_DOWN  &trans    &trans  &kp F4        &kp F5  &kp F6  &kp F11
-&kp LEFT_SHIFT  &trans      &trans           &kp C_NEXT        &kp C_MUTE         &trans    &trans  &kp F1        &kp F2  &kp F3  &kp F10  &kp LEFT_GUI
-                                             &trans            &kp LEFT_CONTROL   &trans    &trans  &kp LEFT_ALT  &trans
+                &kp ESCAPE  &kp PRINTSCREEN  &kp C_PREVIOUS    &kp C_VOLUME_UP     &trans         &trans     &kp F7        &kp F8         &kp F9  &kp F12
+                &trans      &trans           &kp C_PLAY_PAUSE  &kt C_VOLUME_DOWN   &trans         &trans     &kp F4        &kp F5         &kp F6  &kp F11
+&kp LEFT_SHIFT  &kp ESCAPE  &trans           &kp C_NEXT        &kp C_MUTE          &trans         &trans     &kp F1        &kp F2         &kp F3  &kp F10  &kp LEFT_GUI
+                                             &lt 0 TAB         &lt 1 LEFT_CONTROL  &lt 2 SPACE    &kp ENTER  &kp LEFT_ALT  &kp BACKSPACE
             >;
         };
 
