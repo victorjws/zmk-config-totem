@@ -10,12 +10,11 @@
 //
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
-
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 50    // default: 10
 
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
 #define BASE 0
@@ -67,7 +66,7 @@
                 &kp Q  &kp W  &kp E      &kp R               &kp T          &kp Y      &kp L         &kp I      &kp O    &kp P
                 &kp A  &kp S  &kp D      &kp F               &kp G          &kp H      &kp J         &kp K      &kp L    &kp SEMICOLON
 &kp LEFT_SHIFT  &kp Z  &kp X  &kp C      &kp V               &kp B          &kp N      &kp M         &kp COMMA  &kp DOT  &mt LANGUAGE_1 CAPSLOCK  &kp LEFT_GUI
-                              &lt 1 TAB  &lt 2 LEFT_CONTROL  &lt 3 SPACE    &kp ENTER  &kp LEFT_ALT  &kp BSPC
+                              &lt 3 TAB  &lt 2 LEFT_CONTROL  &lt 1 SPACE    &kp ENTER  &kp LEFT_ALT  &kp BSPC
             >;
         };
 
