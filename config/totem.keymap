@@ -17,7 +17,7 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 50    // default: 10
 
 #include <dt-bindings/zmk/pointing.h>
-nhhnnnnnnnnn
+
 #define BASE 0
 #define NAV  1
 #define SYM  2
