@@ -142,7 +142,7 @@
 
             bindings = <
                 &kp ESCAPE  &kp PRINTSCREEN  &kp C_PREVIOUS    &kp C_VOLUME_UP    &trans    &trans     &kp F7        &kp F8         &kp F9  &kp F12
-                &trans      &trans           &kp C_PLAY_PAUSE  &kt C_VOLUME_DOWN  &trans    &trans     &kp F4        &kp F5         &kp F6  &kp F11
+                &kp ESCAPE  &trans           &kp C_PLAY_PAUSE  &kp C_VOLUME_DOWN  &trans    &trans     &kp F4        &kp F5         &kp F6  &kp F11
 &kp LEFT_SHIFT  &kp ESCAPE  &trans           &kp C_NEXT        &kp C_MUTE         &trans    &trans     &kp F1        &kp F2         &kp F3  &kp F10  &kp LEFT_GUI
                                              &kp TAB           &kp LEFT_CONTROL   &trans    &kp ENTER  &kp LEFT_ALT  &kp BACKSPACE
             >;
