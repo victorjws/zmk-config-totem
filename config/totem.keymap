@@ -91,7 +91,7 @@
                 &kp EQUAL           &kp N7        &kp NUMBER_8  &kp NUMBER_9      &kp LBRC    &kp RBRC   &kp HOME        &kp END         &kp PAGE_UP      &kp PAGE_DOWN
                 &kp MINUS           &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6      &kp LBKT    &kp RBKT   &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &trans
 &kp LEFT_SHIFT  &mt SLASH ASTERISK  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3      &kp LPAR    &kp RPAR   &trans          &kp DOWN_ARROW  &trans           &kp DELETE     &kp LEFT_GUI
-                                                  &kp TAB       &kp LEFT_CONTROL  &trans      &kp ENTER  &kp LEFT_ALT    &kp BACKSPACE
+                                                  &kp N0        &kp LEFT_CONTROL  &trans      &kp ENTER  &kp LEFT_ALT    &kp BACKSPACE
             >;
         };
 
