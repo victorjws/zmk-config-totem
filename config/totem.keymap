@@ -142,10 +142,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                &studio_unlock           &kp PRINTSCREEN  &kp C_PREVIOUS    &kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC    &out OUT_TOG     &kp F7        &kp F8         &kp F9  &kp F12
-                &mt LANGUAGE_1 CAPSLOCK  &none            &kp C_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC    &rgb_ug RGB_TOG  &kp F4        &kp F5         &kp F6  &kp F11
-&kp LEFT_SHIFT  &kp ESCAPE               &none            &kp C_NEXT        &kp C_MUTE         &kp DELETE              &none            &kp F1        &kp F2         &kp F3  &kp F10  &kp LEFT_GUI
-                                                          &kp TAB           &kp LEFT_CONTROL   &kp SPACE               &trans           &kp LEFT_ALT  &kp BACKSPACE
+                &studio_unlock  &kp PRINTSCREEN  &kp C_PREVIOUS    &kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC    &out OUT_TOG     &kp F7        &kp F8         &kp F9  &kp F12
+                &kp CAPSLOCK    &kp LANGUAGE_1   &kp C_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC    &rgb_ug RGB_TOG  &kp F4        &kp F5         &kp F6  &kp F11
+&kp LEFT_SHIFT  &kp ESCAPE      &kp LANGUAGE_2   &kp C_NEXT        &kp C_MUTE         &kp DELETE              &none            &kp F1        &kp F2         &kp F3  &kp F10  &kp LEFT_GUI
+                                                 &kp TAB           &kp LEFT_CONTROL   &kp SPACE               &trans           &kp LEFT_ALT  &kp BACKSPACE
             >;
         };
 
