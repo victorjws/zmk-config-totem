@@ -84,7 +84,7 @@
             bindings = <
             &kp EQUAL  &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp HOME        &none           &kp END          &kp PAGE_UP
             &kp MINUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LEFT_BRACE      &kp RIGHT_BRACE    &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &kp PAGE_DOWN
-&kp ESCAPE  &kp N0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LPAR            &kp RPAR           &none           &kp DOWN_ARROW  &kp LANGUAGE_1   &kp CAPSLOCK   &kp DELETE
+&kp ESCAPE  &kp N0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LPAR            &kp RPAR           &kp CAPSLOCK    &kp DOWN_ARROW  &kp LANGUAGE_1   &kp CAPSLOCK   &kp DELETE
                                      &trans        &trans        &trans              &mo 3              &trans          &trans
             >;
         };
