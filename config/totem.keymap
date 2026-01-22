@@ -58,7 +58,7 @@
             bindings = <
          &kp Q  &kp W  &kp E         &kp R      &kp T          &kp Y        &kp U           &kp I             &kp O    &kp P
          &kp A  &kp S  &kp D         &kp F      &kp G          &kp H        &kp J           &kp K             &kp L    &kp SEMICOLON
-&kp TAB  &kp Z  &kp X  &kp C         &kp V      &kp B          &kp N        &kp M           &kp COMMA         &kp DOT  &kp SLASH      &kp BACKSPACE
+&kp TAB  &kp Z  &kp X  &kp C         &kp V      &kp B          &kp N        &kp M           &kp COMMA         &kp DOT  &kp SLASH      &kp CAPSLOCK
                        &kp LEFT_ALT  &kp LCTRL  &lt 1 SPACE    &lt 2 ENTER  &kp LEFT_SHIFT  &kp LEFT_COMMAND
             >;
         };
@@ -82,9 +82,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &kp EQUAL  &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp HOME        &none           &kp END          &kp PAGE_UP
-            &kp MINUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LEFT_BRACE      &kp RIGHT_BRACE    &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &kp PAGE_DOWN
-&kp ESCAPE  &kp N0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LPAR            &kp RPAR           &kp CAPSLOCK    &kp DOWN_ARROW  &kp LANGUAGE_1   &kp CAPSLOCK   &kp DELETE
+            &kp EQUAL  &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp HOME        &none           &kp END          &none
+            &kp MINUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LEFT_BRACE      &kp RIGHT_BRACE    &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &kp PAGE_UP
+&kp ESCAPE  &kp N0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LPAR            &kp RPAR           &kp BACKSPACE   &kp DOWN_ARROW  &kp DELETE       &kp PAGE_DOWN  &kp LANGUAGE_1
                                      &trans        &trans        &trans              &mo 3              &trans          &trans
             >;
         };
@@ -134,9 +134,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-              &studio_unlock         &kp PRINTSCREEN  &kp C_PREVIOUS    &kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC    &kp F16  &kp F7  &kp F8  &kp F9  &kp F12
-              &kt C_AL_FILE_BROWSER  &none            &kp C_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC    &kp F15  &kp F4  &kp F5  &kp F6  &kp F11
-&out OUT_TOG  &kp K_CALCULATOR       &kp LANGUAGE_2   &kp C_NEXT        &kp C_MUTE         &kp K_WWW               &kp F14  &kp F1  &kp F2  &kp F3  &kp F10  &kp F13
+              &studio_unlock         &kp PRINTSCREEN  &kp C_PREVIOUS    &kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC    &kp F15  &kp F7  &kp F8  &kp F9  &kp F12
+              &kt C_AL_FILE_BROWSER  &none            &kp C_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC    &kp F14  &kp F4  &kp F5  &kp F6  &kp F11
+&out OUT_TOG  &kp K_CALCULATOR       &none            &kp C_NEXT        &kp C_MUTE         &kp K_WWW               &kp F13  &kp F1  &kp F2  &kp F3  &kp F10  &kp LANGUAGE_2
                                                       &trans            &trans             &trans                  &trans   &trans  &trans
             >;
         };
