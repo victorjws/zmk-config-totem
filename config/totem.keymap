@@ -21,14 +21,22 @@
 #define NAV  1
 #define SYM  2
 #define ADJ  3
-#define TVP1 4
-#define TVP2 5
 
 &mt {
     quick-tap-ms = <100>;
     global-quick-tap;
     flavor = "tap-preferred";
     tapping-term-ms = <170>;
+};
+
+&mmv {
+    time-to-max-speed-ms = <400>;
+    acceleration-exponent = <1>;
+};
+
+&msc {
+    time-to-max-speed-ms = <200>;
+    acceleration-exponent = <0>;
 };
 
 / {
