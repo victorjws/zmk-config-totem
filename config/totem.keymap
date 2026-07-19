@@ -51,7 +51,7 @@
 
         bluetooth_clear {
             bindings = <&bt BT_CLR>;
-            key-positions = <11 10>;
+            key-positions = <3 2>;
             require-prior-idle-ms = <100>;
             layers = <3>;
             timeout-ms = <200>;
@@ -130,7 +130,7 @@
             &kp EQUAL  &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp HOME        &none           &kp END          &none
             &kp MINUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LEFT_BRACE      &kp RIGHT_BRACE    &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &kp PAGE_UP
 &kp ESCAPE  &kp N0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LPAR            &kp RPAR           &kp BACKSPACE   &kp DOWN_ARROW  &kp DELETE       &kp PAGE_DOWN  &kp LANGUAGE_1
-                                     &trans        &trans        &trans              &mo 3              &trans          &trans
+                                     &trans        &trans        &trans              &trans             &trans          &trans
             >;
         };
 
@@ -156,7 +156,7 @@
            &kp GRAVE  &kp AMPERSAND    &kp ASTERISK  &kp SINGLE_QUOTE  &kp EQUAL        &mkp MB4       &mkp MB1        &mkp MB3        &mkp MB2         &mkp MB5
            &kp SLASH  &kp DOLLAR       &kp PERCENT   &kp CARET         &kp MINUS        &kp PAGE_UP    &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_RIGHT  &msc SCRL_UP
 &kp COMMA  &kp DOT    &kp EXCLAMATION  &kp AT_SIGN   &kp HASH          &kp BACKSLASH    &kp PAGE_DOWN  &kp BACKSPACE   &mmv MOVE_DOWN  &kp DELETE       &msc SCRL_DOWN  &kp K_APPLICATION
-                                       &trans        &trans            &mo 3            &trans         &trans          &trans
+                                       &trans        &trans            &trans           &trans         &trans          &trans
             >;
         };
 
@@ -184,6 +184,15 @@
 &out OUT_TOG  &bt BT_SEL 4  &bt BT_SEL 1     &kp C_NEXT        &kp C_MUTE         &kp K_WWW               &kp F13  &kp F1  &kp F2  &kp F3  &kp F10  &kp LANGUAGE_2
                                              &trans            &trans             &trans                  &trans   &trans  &trans
             >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        adj_active {
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };
